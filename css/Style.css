@@ -21,16 +21,15 @@ body {
     min-height: 100px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 50px 0 56px;
 }
-
-.header__logo {
-    padding-top: 40px;
-}
-
-
 
 .header__menu {
     display: flex;
+    margin-bottom: 5px;
 }
 
 .menu__dash {
@@ -41,13 +40,14 @@ body {
 
 .header__text {
     color: #190701;
-    text-align: center;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 900;
     line-height: 16px; /* 100% */
-    padding-top: 40px;
+    align-items: center;
+    display: flex;
+    margin-right: 7px;
 }
 
 .menu__item {
@@ -61,14 +61,13 @@ body {
 .header__button {
     width: 40px;
     height: 40px;
-    margin-top: 28px;
     border-color: transparent;
     background-color: transparent;
     flex-direction: column;
     border: none;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     padding-inline: 0;
     padding-block: 0;
 }
@@ -100,12 +99,11 @@ body {
     font-weight: 500;
     line-height: 64px; /* 114.286% */
     width: 871px;
-    margin: 8px 0 0 0;
-    padding: 0 0 0 145px;
+    margin: 8px 145px 0 145px;
 }
 
 .top-caption {
-    padding: 75px 0 0 145px;
+    margin: 75px 75px 0 145px;
     font-weight: 500;
 }
 
@@ -116,16 +114,12 @@ body {
     margin: 126px 0 0 0;
 }
 
-
 @media (max-width: 768px) {
-    .header__logo {
-        padding-left: 40px;
-    }
-    .header__menu {
-        padding-right: 40px;
+    .header {
+        padding: 0 32px 0 40px;
     }
     .top-caption {
-        padding: 78px 0 0 40px;
+        margin: 78px 40px 0 40px;
     }
     .top-title {
         color: #190701;
@@ -135,8 +129,7 @@ body {
         font-weight: 500;
         line-height: 64px; /* 133.333% */
         width: 572px;
-        padding: 0 0 0 40px;
-        margin-top: 10px;
+        margin: 10px 40px 0 40px;
     }
     .top-img {
         width: 100%;
@@ -144,21 +137,17 @@ body {
 }
 
 @media (max-width: 375px) {
-    .header__logo {
-        padding-left: 32px;
-    }
-    .header__menu {
-        padding-right: 32px;
+    .header {
+        padding: 0 24px 0 32px;
     }
     .top-caption {
-        padding:  75px 0 0 32px
+        margin:  75px 32px 0 32px
     }
     .top-title {
         font-size: 32px;
         line-height: 40px; /* 125% */
         width: 311px;
-        padding: 0 0 0 32px;
-        margin-top: 11px;
+        margin: 11px 32px 0 32px;
     }
     .top-img {
         width: 100%;
