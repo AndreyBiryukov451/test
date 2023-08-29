@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="icon" type="imege/x-icon" href="img/favicon.ico">
 </head>
 <body>
     <header class="header">
@@ -31,29 +32,44 @@
                 <p class="top-caption">Babiččina Volba</p>
                 <h1 class="top-title">Aktivační kampaň pro největšího výrobce prémiové mouky v Česku</h1>
             </div>
-            <picture>
-                <source media="(max-width: 767px)" srcset="img/top-picture375.png">
-                <source media="(max-width: 1439px)" srcset="img/top-picture768.png">
-                <img class="top-img" src="./img/top-picture.png" alt="">
-            </picture>
+            <div class="picture__wrp">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="img/top-picture375.png">
+                    <source media="(max-width: 1439px)" srcset="img/top-picture768.png">
+                    <img class="top-img" src="./img/top-picture.png" alt="">
+                </picture>
+            </div>
         </div>
     </section>
     <section class="second-section">
         <div class="container">
-            <div class="second-section-text-up">
-                <h2 class="second-section-title">Úkol</h2>
-                <p class="second-section-subtitle-up">Babiččina volba je jedním z největších výrobců mouky v ČR a tomu by měly odpovídat i jejich sociální sítě.</p>
-            </div>
-            <div class="second-section-item">
-                <span class="second-section-line"></span>
-            </div>
-            <div class="second-section-text-down">
-                <h2 class="second-section-title-down">Řešení</h2>
-                <p class="second-section-subtitle-down">V rámci aktivační kampaně jsme spustili rozsáhlou komunikaci na sociálních sítích, která za tři měsíce navýšila počet sledujících a engagement rate o více než 50 %.</p>
+            <div class="second-section__wrp">
+                <div class="second-section-text-up">
+                    <h2 class="second-section-title">Úkol</h2>
+                    <p class="second-section-subtitle-up__large">Babiččina volba je jedním z největších výrobců mouky v ČR a tomu by měly odpovídat i jejich sociální sítě.</p>
+                    <p class="second-section-subtitle-up__small">Získat nové fanoušky a zvýšit míru zapojení na Instagramovém profilu klienta.</p>
+                </div>
+                <div class="second-section-item">
+                    <span class="second-section-line"></span>
+                </div>
+                <div class="second-section-text-down">
+                    <h2 class="second-section-title-down">Řešení</h2>
+                    <p class="second-section-subtitle-down">V rámci aktivační kampaně jsme spustili rozsáhlou komunikaci na sociálních sítích, která za tři měsíce navýšila počet sledujících a engagement rate o více než 50 %.</p>
+                </div>
             </div>
             <div class="mobolephones">
-                <img class="img-first-phone" src="./img/first-phone.png" alt="first-phone">
-                <img class="img-second-phone" src="./img/second-phone.png" alt="second-phone">
+                <div class="img-first-phone">
+                    <picture style="width: 100%;">
+                        <source media="(max-width: 767px)" srcset="img/first-phone767.png">
+                        <img style="width: 100%" src="./img/first-phone.png" alt="first-phone">
+                    </picture>
+                </div>
+                <div class="img-second-phone" >
+                    <picture style="width: 100%;">
+                        <source srcset="./img/second-phone.png">
+                        <img style="width: 100%" src="./img/second-phone.png" alt="second-phone">
+                    </picture>
+                </div>
             </div>
             <div class="second-section-switch">
                 <img class="img-wight-dash" src="./img/wight-dash.png" alt="wight-dash">
@@ -62,39 +78,48 @@
         </div>
     </section>
     <section class="third-section container">
-        <div class="third-section-text">
-            <h2 class="third-section-title">Vizuální identita</h2>
-            <p class="third-section-sub-title">Pro klienta jsme vytvořili jednoduchý design manuál pro komunikaci na sociálních sítích.</p>
+        <div class="third-section-wrp">
+            <div class="third-section-text">
+                <h2 class="third-section-title title">Vizuální identita</h2>
+                <p class="third-section-sub-title sub-title">Pro klienta jsme vytvořili jednoduchý design manuál pro komunikaci na sociálních sítích.</p>
+            </div>
         </div>
-        <picture>
-            <source media="(max-width: 767px)" srcset="img/third-picture768.png">
-            <source media="(max-width: 1439px)" srcset="img/third-picture768.png">
-            <img class="third-section-picture" src="./img/third-picture.png" alt="third-picture">
-        </picture>
+        <div>
+            <picture class="picture__wrp">
+                <source media="(max-width: 767px)" srcset="img/third-picture768.png">
+                <source media="(max-width: 1439px)" srcset="img/third-picture768.png">
+                <img class="third-section-picture" src="./img/third-picture.png" alt="third-picture">
+            </picture>
+        </div>
     </section>
     <section class="fourth-section container">
         <div class="fourth-section-text">
-            <h2 class="fourth-section-title">Recepty jako od babičky</h2>
-            <p class="fourth-section-sub-title">Pro cílovou skupinu jsme připravili obsah, na kterém si doslova mohli “smlsnout”. Ve spolupráci se zkušenou influencerkou @teaolivova jsme natočili sérii krátkých Reels receptů.</p>
+            <h2 class="fourth-section-title title">Recepty jako od babičky</h2>
+            <h2 class="fourth-section-title__768 title">Recepty jako<br>od babičky</h2>
+            <span class="fourth-section-sub-title sub-title">Pro cílovou skupinu jsme připravili obsah, na kterém si doslova mohli “smlsnout”. Ve spolupráci se zkušenou influencerkou @teaolivova jsme natočili sérii krátkých Reels receptů.</span>
         </div>
         <div class="fourth-section-picturs">
             <div class="half-width">
                 <img class="fourth-sec-pic1" src="./img/fourth-sec1.png" alt="fourth-sec1">
                 <img class="fourth-sec-pic3" src="./img/fourth-sec3.png" alt="fourth-sec3">
             </div>
-            <div class="half-width">
+            <div class="half-width half-width__forth-sec">
                 <img class="fourth-sec-pic2" src="./img/fourth-sec2.png" alt="fourth-sec2">
+                <img class="fourth-sec-pic3__375" src="./img/fourth-sec3.png" alt="fourth-sec-pic3">
                 <img class="fourth-sec-pic4" src="./img/fourth-sec4.png" alt="fourth-sec4">
             </div>
         </div>
     </section>
     <section class="fifth-section container">
-        <div class="fifth-section__text">
-            <h2 class="title fifth-section__title">Musí to být vidět</h2>
-            <p class="sub-title fifth-section__sub-title">Dělat dobrý obsah nestačí, musí ho také někdo vidět. Právě proto jsme do aktivace zapojili traffic kampaně s krátkými upoutávkami receptů, které uživatel najde na profilu.</p>
+        <div class="fifth-section___wrp">
+            <div class="fifth-section__text">
+                <h2 class="title fifth-section__title">Musí to být vidět</h2>
+                <h2 class="title fifth-section__title__678">Musí to<br>být vidět</h2>
+                <p class="sub-title fifth-section__sub-title">Dělat dobrý obsah nestačí, musí ho také někdo vidět. Právě proto jsme do aktivace zapojili traffic kampaně s krátkými upoutávkami receptů, které uživatel najde na profilu.</p>
+            </div>
         </div>
         <div class="fifth-section__pictures">
-            <div class="half-width">
+            <div class="half-width half-width__six-sec">
                 <img src="./img/5SecP1.png" alt="5SecP1" class="fifth-section__pic1">
                 <img src="./img/5SecP3.png" alt="5SecP3" class="fifth-section__pic3">
             </div>
@@ -103,64 +128,90 @@
                 <img src="./img/5SecP4.png" alt="5SecP4" class="fifth-section__pic4">
             </div>
         </div>
-        <div class="fourth-section-picturs_375">
+        <div class="fifth-section-picturs_375">
             <img src="./img/5SecP1.png" alt="5SecP1" class="fifth-section__pic1_375">
             <img src="./img/5SecP2.png" alt="5SecP2" class="fifth-section__pic2_375">
             <img src="./img/5SecP3.png" alt="5SecP3" class="fifth-section__pic3_375">
             <img src="./img/5SecP4.png" alt="5SecP4" class="fifth-section__pic4_375">
         </div>
     </section>
-    <section class="container sixth-section">
-        <div class="sixth-section__text">
-            <h2 class="title sixth-section__title">Komunikace s fanoušky</h2>
-            <p class="sub-title sixth-section_sub-title">Součastí kampaně byl taky sběr zpětné vazby od zákazníků, kteří profil navštěvovali. Díky ní jsme byli schopni vytvářet stále lepší obsah a budovat silný vztah s cílovou skupinou.</p>
+    <section class="container sixth-section"> 
+        <div class="sixth-section__wrp">
+            <div class="sixth-section__text">
+                <h2 class="title sixth-section__title">Komunikace s fanoušky</h2>
+                <p class="sub-title sixth-section_sub-title">Součastí kampaně byl taky sběr zpětné vazby od zákazníků, kteří profil navštěvovali. Díky ní jsme byli schopni vytvářet stále lepší obsah a budovat silný vztah s cílovou skupinou.</p>
+            </div>
         </div>
         <div class="sixth-section__reveiw">
-            <img class="sixth-section__pic1" src="./img/6SecP1 (1).png" alt="6SecP1">
-            <div class="sixth-section__item">
+            <div class="sixth-section__item__left">
+                <img class="sixth-section__pic1" src="./img/6SecP1 (1).png" alt="6SecP1">
+            </div>
+            <div class="sixth-section__item__right">
                 <img class="sixth-section__pic2" src="./img/6SecP2.png" alt="6SecP2">
                 <img class="sixth-section__pic3" src="./img/6SecP3.png" alt="6SecP3">
             </div>
         </div>
     </section>
-    <section class="seventh-section container">
+    <section class="seventh-section">
+        <h2 class="seventh-section__tittle title">Bez práce<br>nejsou koláče</h2>
         <div class="seventh-section__wrp">
             <div class="seventh-section__text">
-                <h2 class="seventh-section__tittle title">Bez práce nejsou koláče</h2>
                 <p class="seventh-section__quote">“</p> 
                 <p class="sub-title seventh-section__subtitle">Babiččina Volba je velmi oblíbená značka, která si už delší dobu zasluhovala dostávat lásku také na Instagramu. Myslím, že se nám povedlo sjednotit komunitu fanoušků a předčit klientovo očekávání? </p>
-                <p class="sub-title seventh-section__subtitle2">Hanka Kuželová, Project Manager & Team Lead</p>
+                <p class="sub-title"style="padding-right: 59px">Hanka Kuželová, Project Manager & Team Lead</p>
             </div>
             <div class="seventh-section__indicator">
-                <div class="indicator1">
-                    <p class="indicator__title">+3410</p>
-                    <p class="indicator_sub-title">sledujících na Instagramu</p>
-                    <p class="indicator-text">původním cílem bylo 900 sledujících</p>
+                <div class="seventh-section__column column__marg">
+                    <div class="indicator1">
+                        <p class="indicator__title">+3410</p>
+                        <p class="indicator_sub-title">sledujících na Instagramu</p>
+                        <p class="indicator-text">původním cílem bylo 900 sledujících</p>
+                    </div>
+                    <div class="indicator3">
+                        <p class="indicator__title">288%</p>
+                        <p class="indicator_sub-title">zvýšení míry zapojení uživatelů</p>
+                        <p class="indicator-text">z původních 81 na 233 reakcí</p>
+                    </div>
                 </div>
-                <div class="indicator2">
-                    <p class="indicator__title">1,1 mil.</p>
-                    <p class="indicator_sub-title"> zobrazení obsahu uživatelům</p>
-                    <p class="indicator-text">původním cílem bylo 900 tis.</p>
-                </div>
-                <div class="indicator3">
-                    <p class="indicator__title">288%</p>
-                    <p class="indicator_sub-title">zvýšení míry zapojení uživatelů</p>
-                    <p class="indicator-text">z původních 81 na 233 reakcí</p>
-                </div>
-                <div class="indicator4">
-                    <p class="indicator__title">332 tis.</p>
-                    <p class="indicator_sub-title">zasažených uživatelů</p>
-                    <p class="indicator-text">původním cílem bylo 300 tis.</p>
+                <div class="seventh-section__column">
+                    <div class="indicator2">
+                        <p class="indicator__title indicator__title__marg">1,1 mil.</p>
+                        <p class="indicator_sub-title indicator__sub-title__marg"> zobrazení obsahu uživatelům</p>
+                        <p class="indicator-text">původním cílem bylo 900 tis.</p>
+                    </div>
+                    <div class="indicator3__375">
+                        <p class="indicator__title">288%</p>
+                        <p class="indicator_sub-title">zvýšení míry zapojení uživatelů</p>
+                        <p class="indicator-text">z původních 81 na 233 reakcí</p>
+                    </div>
+                    <div class="indicator4">
+                        <p class="indicator__title">332 tis.</p>
+                        <p class="indicator_sub-title">zasažených uživatelů</p>
+                        <p class="indicator-text">původním cílem bylo 300 tis.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="seventh-section__order">
-            <p class="order__title">Objednejte se na konzultaci a pomůžeme prodávat i vám</p>
-            <p class="order__sub-title">Pomohli jsme už desítkám klientům získat nové zákazníky v on-line. Vystavíme vám strategii na míru a výsledky dodáme na klíč.</p>
-            <button class="order__button"></button>
+    </section> 
+    <section class="banner">
+        <picture>
+            <source media="(max-width: 767px)" srcset="img/man375.png">
+            <source media="(max-width: 1439px)" srcset="img/man768.png">
+            <img class="man" src="./img/man.png" alt="man">
+        </picture>
+        <picture>
+            <source media="(max-width: 767px)" srcset="img/blue-line375.svg">
+            <source media="(max-width: 1439px)" srcset="img/blue-line768.svg">
+            <img class="blue-line" src="./img/blue-line.svg" alt="blue-line" class="line">
+        </picture>
+        <div class="banner__wrp">
+            <h2 class="banner__title">Objednejte se na konzultaci a pomůžeme prodávat i vám</h2>
+            <h2 class="banner__title__375">Objednejte se na konzultaci<br>a pomůžeme prodávat i vám</h2>
+            <p class="banner__sub-title">Pomohli jsme už desítkám klientům získat nové zákazníky v on-line. Vystavíme vám strategii na míru a výsledky dodáme na klíč.</p>
+            <button class="banner__button">Objednat se</button>
         </div>
     </section>
-    <section class="eighth-section container">
+    <!-- <section class="eighth-section container">
         <h2 class="title eighth-section__title">Prohlédněte si další projekty</h2>
         <div class="eighth-section__pictures">
             <img class="eighth-section__pic1" src="./img/8secP1.png" alt="">
@@ -188,7 +239,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer>   -->
 
 </body>
-</html> 
+</html>  
